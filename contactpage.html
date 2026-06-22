@@ -1,0 +1,231 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                 font-family: Arial, sans-serif;
+                 padding:10px;
+                 background-color:#FFF8E7;
+            }
+            .container{
+                width:100%;
+                border:2px solid black;
+            }
+            .header{
+                display:flex;
+                justify-content:space-between;
+                align-items: center;
+                padding:15px;
+                border-bottom: 2px solid black;
+            }
+            .logo{
+                width:60px;
+                height:60px;
+                background:#FAD7A0;
+                text-align:center;
+                line-height: 60px;
+            }
+            .menu{
+                width:570px;
+                height:40px;
+              
+                text-align:center;
+                line-height: 10px;
+            }
+            .menu li{
+                display:inline-block;
+                margin-left:20px;
+            }
+            .menu a{
+                text-decoration:none;
+                color:black;
+                font-weight:bold;
+                font-size:20px;
+            }
+            .menu a:hover{
+                 color:red;
+            }
+            .Banner{
+                height:350px;
+                border-bottom: 2px solid black;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                font-size:24px;
+                background-color:#FFFDF7;
+            }
+            .content{
+                display:flex;
+                padding:20px;
+                gap:20px;
+                border-bottom: 2px solid black;
+            }
+            .left{
+                width:30%;
+                background-color:#E8F5E9;
+            }
+            .small-box{
+                height:120px;
+                border:2px solid #000;
+                margin-bottom:20px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .right{
+                width:70%;
+                border:2px solid #000;
+                min-height:260px;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                background-color:#FFF3E0;
+            }
+            .footer-boxes{
+                display:flex;
+                justify-content:space-around;
+                padding:20px;
+                border-bottom: 2px solid #000;
+            }
+            .footer-box{
+                width:20%;
+                height:120px;
+                border:2px solid #000;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFE0B2;
+                padding:15px;
+                text-align: center;
+                flex-direction: column;
+            }
+            .copyright{
+                text-align: center;
+                padding: 15px;
+                background-color: #d9d9d9;
+            }
+              .bannerimg{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+            .salid{
+                width:400px;
+                height:100px;
+                object-fit:cover;
+            }
+            .icon{
+                font-size:40px;
+            }
+            .footer-box h3{
+                color:#FF5722;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                margin:0;
+                font-size: 18px;
+            }
+             .footer-box p{
+                margin:0;
+                color:#000;
+                font-weight:bold;
+                font-size: 16px;
+            }
+            @media(max-width:768px){
+                .content{
+                    flex-direction: column;
+                }
+                .left,
+                .right{
+                    width:100%;
+                }
+                .footer-boxes{
+                    flex-wrap:wrap;
+                    gap:15px;
+                }
+                .footer-box{
+                    width:48%;
+                }
+            }
+            @media(max-width:480px){
+                .header{
+                    flex-direction: column;
+                    gap:15px;
+                }
+                .menu{
+                    width:100%;
+                }
+                .footer-box{
+                    width:100%;
+                }
+                .Banner{
+                    height:120px;
+                    font-size:18px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo"><img src="lg.jpeg" width="60px" height="60px"></div>
+                <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="servicespage.html">Services</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="Banner"><img src="contact.jpeg" class="bannerimg"></div>
+
+        <div class="content">
+            <div class="left">
+                <div class="small-box"><b>"We are always happy to help you!"</b></div>
+                <div class="small-box"><img src="salid2.jpeg" class="salid"></div>
+            </div>
+           <div class="right">
+
+            <form>
+             <h2>Send Message</h2>
+
+            <input type="text" placeholder="Your Name"><br><br>
+            <input type="email" placeholder="Your Email"><br><br>
+            <input type="text" placeholder="Subject"><br><br>
+
+            <textarea placeholder="Your Message"></textarea><br><br>
+
+           <button type="submit">Send</button>
+           </form>
+
+          </div>
+        </div>
+
+        <div class="footer-boxes">
+            <div class="footer-box">
+                <h3>📍Address</h3>
+                <p>Tasty Recipes<br>FC Road,Pune</br>Maharashtra-411004<br>India</br></p>
+            </div>
+            <div class="footer-box">
+                 <h3>📧Email</h3>
+                <p>tastyrecipe1411@gmail.com</p>
+            </div>
+            <div class="footer-box">
+                <h3>📞Phone</h3>
+                <p>+91 9865472095</p>
+            </div>
+            <div class="footer-box">
+                <h3>🪩Follow us</h3>
+                <p>Instagram|Facebook|YouTube<br>@tastyrecipe</br></p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            @2026 Tasty Recipes.All Rights Reserved.
+        </div>
+    </body>
+</html>
